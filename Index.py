@@ -7,11 +7,11 @@ while True:
     clasees = str.lower(player_class)
 
     if name == " ":
-        print("Character must contain 8 characters in their name.")
+        print("Character must contain a name.")
         continue
 
     if not age.isdigit():
-        print("You are too young.")
+        print("Age must be a number.")
         continue
 
     if clasees not in ["mage", "melee", "range"] or clasees == "":
@@ -20,7 +20,8 @@ while True:
 
     break
 
-print("Character creation successful!")
+print("Character creation successful!\n")
+print("Weapon")
 
 if clasees == "mage":
     print("Pick a weapon")
